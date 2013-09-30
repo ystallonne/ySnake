@@ -1,0 +1,25 @@
+<projectDescription>
+  <id>1298768257110</id>
+  <name>QRCodeReader</name>
+  <asVersion>0</asVersion>
+  <boundTemplate>file:///C|/Users/Ystallonne/AppData/Local/Adobe/Flash CS5/en_US/Configuration/ActionScript 3.0/Templates/boundClass_as3.as</boundTemplate>
+  <classTemplate>file:///C|/Users/Ystallonne/AppData/Local/Adobe/Flash CS5/en_US/Configuration/ActionScript 3.0/Templates/standardClass_as3.as</classTemplate>
+  <classPath>.</classPath>
+  <defaultApp>file:///C|/Users/Ystallonne/Documents/Blackberry Playbook/YSnake/YSnake.fla</defaultApp>
+  <rootURI>file:///C|/Users/Ystallonne/Documents/Blackberry Playbook/YSnake/</rootURI>
+  <flexSDK/>
+  <sources editable="false"/>
+  <libraries editable="false"/>
+  <externalLibraries editable="false"/>
+  <compileList editable="false"/>
+  <recentFiles editable="false">
+    <uri label="Chronometer.as">file:///C|/Users/Ystallonne/Documents/Blackberry Playbook/YSnake/com/blackberry/playbook/Chronometer.as</uri>
+    <uri label="YSnake.fla">file:///C|/Users/Ystallonne/Documents/Blackberry Playbook/YSnake/YSnake.fla</uri>
+    <uri label="Snake.as">file:///C|/Users/Ystallonne/Documents/Blackberry Playbook/YSnake/com/blackberry/playbook/Snake.as</uri>
+    <uri label="Main.as">file:///C|/Users/Ystallonne/Documents/Blackberry Playbook/YSnake/Main.as</uri>
+    <uri label="DBSnake.as">file:///C|/Users/Ystallonne/Documents/Blackberry Playbook/YSnake/com/blackberry/playbook/DBSnake.as</uri>
+    <uri label="DBOptions.as">file:///C|/Users/Ystallonne/Documents/Blackberry Playbook/YSnake/com/blackberry/playbook/DBOptions.as</uri>
+    <uri label="GridDirection.as">file:///C|/Users/Ystallonne/Documents/Blackberry Playbook/YSnake/com/blackberry/playbook/GridDirection.as</uri>
+  </recentFiles>
+  <locations editable="false"/>
+</projectDescription>

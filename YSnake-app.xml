@@ -1,36 +1,120 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <application xmlns="http://ns.adobe.com/air/application/2.5">
 	<id>ySnake</id>
-	<versionNumber>1.0</versionNumber>
+	<versionNumber>3.0</versionNumber>
 	<filename>ySnake</filename>
-	<description>A classic snake game</description>
+	<description>A classic and fun snake game</description>
 	
-	<!-- To localize the description, use the following format for the description element.<description><text xml:lang="en">English App description goes here</text><text xml:lang="fr">French App description goes here</text><text xml:lang="ja">Japanese App description goes here</text></description>-->
+	
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <!-- To localize the description, use the following format for the description element.<description><text xml:lang="en">English App description goes here</text><text xml:lang="fr">French App description goes here</text><text xml:lang="ja">Japanese App description goes here</text></description>-->
 	
 	<name>ySnake</name>
 	
-	<!-- To localize the name, use the following format for the name element.<name><text xml:lang="en">English App name goes here</text><text xml:lang="fr">French App name goes here</text><text xml:lang="ja">Japanese App name goes here</text></name>-->
+	
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <!-- To localize the name, use the following format for the name element.<name><text xml:lang="en">English App name goes here</text><text xml:lang="fr">French App name goes here</text><text xml:lang="ja">Japanese App name goes here</text></name>-->
 	
 	<copyright>Ystallonne Alves</copyright>
 	<initialWindow>
-		<content>YSnake.swf</content>
-		<systemChrome>none</systemChrome>
-		<transparent>true</transparent>
-		<visible>true</visible>
-		<fullScreen>false</fullScreen>
-		<aspectRatio>portrait</aspectRatio>
-		<renderMode>auto</renderMode>
-		<maximizable>false</maximizable>
-		<minimizable>false</minimizable>
-		<resizable>false</resizable>
-		<width>1024</width>
-		<height>600</height>
+		  <content>YSnake.swf</content>
+		  <systemChrome>none</systemChrome>
+		  <transparent>true</transparent>
+		  <visible>true</visible>
+		  <fullScreen>false</fullScreen>
+		  <aspectRatio>portrait</aspectRatio>
+		  <renderMode>auto</renderMode>
+		  <maximizable>false</maximizable>
+		  <minimizable>false</minimizable>
+		  <resizable>false</resizable>
+		  <width>1024</width>
+		  <height>600</height>
 	</initialWindow>
 	<icon>
-		<image128x128>icons/ys128x128.png</image128x128>
-		<image48x48>icons/ys48x48.png</image48x48>
-		<image32x32>icons/ys32x32.png</image32x32>
-		<image16x16>icons/ys16x16.png</image16x16>
+		  <image128x128>icons/ys128x128.png</image128x128>
+		  <image48x48>icons/ys48x48.png</image48x48>
+		  <image32x32>icons/ys32x32.png</image32x32>
+		  <image16x16>icons/ys16x16.png</image16x16>
 	</icon>
 	<customUpdateUI>false</customUpdateUI>
 	<allowBrowserInvocation>false</allowBrowserInvocation>

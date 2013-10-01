@@ -8,6 +8,8 @@
 	import flash.display.DisplayObject;
 	import flash.events.MouseEvent;
 	import flash.desktop.NativeApplication;
+	import flash.media.SoundMixer;
+	import flash.media.SoundTransform;
 
 	public class Main extends MovieClip {
 
@@ -29,6 +31,7 @@
 		}
 
 		public function ySnakeHome():void {
+			SoundMixer.soundTransform = new SoundTransform(0);		
 			if (ySnake != null) {
 				ySnake.visible = false;
 				ySnake.removeEventListener("GameOver",Records);
@@ -45,6 +48,7 @@
 		}
 
 		public function Play(event:Event = null):void {
+			SoundMixer.soundTransform = new SoundTransform(1);			
 			ySnakePlay();
 		}
 
@@ -76,7 +80,9 @@
 			
 			var noData:Boolean = false;
 			this.ySnakeInterface.btnSound.enabled = false;
-		/*	if (options.getSound() == "Active"){
+			
+			/* SOUND */
+			if (options.getSound() == "Active"){
 				this.ySnakeInterface.btnSound.btnActive.visible = true;
 				this.ySnakeInterface.btnSound.btnInactive.visible = false;
 			} else if (options.getSound() == "Inactive"){
@@ -86,8 +92,9 @@
 				this.ySnakeInterface.btnSound.btnActive.visible = true;
 				this.ySnakeInterface.btnSound.btnInactive.visible = false;
 				noData = true;
-			} */
+			}
 			
+			/* CONTROL */
 			if (options.getControl() == "Single"){
 				this.ySnakeInterface.btnControl.btnSingleTouch.visible = true;
 				this.ySnakeInterface.btnControl.btnGesture.visible = false;
@@ -107,7 +114,8 @@
 				noData = true;
 			}
 			
-			/*if (options.getLevels() == "Active"){
+			/* LEVEL */
+			if (options.getLevels() == "Active"){
 				this.ySnakeInterface.btnLevels.btnActive.visible = true;
 				this.ySnakeInterface.btnLevels.btnInactive.visible = false;
 			} else if (options.getLevels() == "Inactive"){
@@ -117,19 +125,19 @@
 				this.ySnakeInterface.btnLevels.btnActive.visible = true;
 				this.ySnakeInterface.btnLevels.btnInactive.visible = false;
 				noData = true;
-			}*/
+			}
 			
 			if (noData){
-				//options.setSound("Active");
+				options.setSound("Active");
 				options.setControl("Single");
-				//options.setLevels("Active");
+				options.setLevels("Active");
 				options.insertToDatabase();
 				noData = false;
 			}
 
-			//this.ySnakeInterface.btnSound.addEventListener(MouseEvent.CLICK, ySnakeOptionsSound);
+			this.ySnakeInterface.btnSound.addEventListener(MouseEvent.CLICK, ySnakeOptionsSound);
 			this.ySnakeInterface.btnControl.addEventListener(MouseEvent.CLICK, ySnakeOptionsControl);
-			//this.ySnakeInterface.btnLevels.addEventListener(MouseEvent.CLICK, ySnakeOptionsLevels);
+			this.ySnakeInterface.btnLevels.addEventListener(MouseEvent.CLICK, ySnakeOptionsLevels);
 		}
 
 		public function ySnakeOptionsSound(Event:MouseEvent):void {

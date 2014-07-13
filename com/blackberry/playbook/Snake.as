@@ -1,4 +1,4 @@
-package com.blackberry.playbook{
+﻿package com.blackberry.playbook{
 
 	import flash.geom.Point;
 	import flash.ui.Keyboard;

@@ -3,7 +3,7 @@
 	<id>ySnake</id>
 	<versionNumber>3.0</versionNumber>
 	<filename>ySnake</filename>
-	<description>A classic and fun snake game</description>
+	<description>The classic and fun snake game</description>
 	
 	
 
@@ -47,7 +47,54 @@
 
   
 
-  <!-- To localize the description, use the following format for the description element.<description><text xml:lang="en">English App description goes here</text><text xml:lang="fr">French App description goes here</text><text xml:lang="ja">Japanese App description goes here</text></description>-->
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<!-- To localize the description, use the following format for the description element.<description><text xml:lang="en">English App description goes here</text><text xml:lang="fr">French App description goes here</text><text xml:lang="ja">Japanese App description goes here</text></description>-->
 	
 	<name>ySnake</name>
 	
@@ -93,7 +140,54 @@
 
   
 
-  <!-- To localize the name, use the following format for the name element.<name><text xml:lang="en">English App name goes here</text><text xml:lang="fr">French App name goes here</text><text xml:lang="ja">Japanese App name goes here</text></name>-->
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<!-- To localize the name, use the following format for the name element.<name><text xml:lang="en">English App name goes here</text><text xml:lang="fr">French App name goes here</text><text xml:lang="ja">Japanese App name goes here</text></name>-->
 	
 	<copyright>Ystallonne Alves</copyright>
 	<initialWindow>
@@ -111,11 +205,12 @@
 		  <height>600</height>
 	</initialWindow>
 	<icon>
-		  <image128x128>icons/ys128x128.png</image128x128>
-		  <image48x48>icons/ys48x48.png</image48x48>
-		  <image32x32>icons/ys32x32.png</image32x32>
-		  <image16x16>icons/ys16x16.png</image16x16>
-	</icon>
+		  
+		  		 		 	<image16x16>icons/ys16x16.png</image16x16>
+    <image32x32>icons/trintaedois.png</image32x32>
+    <image48x48>icons/ys48x48.png</image48x48>
+    <image128x128>icons/ys128x128.png</image128x128>
+  </icon>
 	<customUpdateUI>false</customUpdateUI>
 	<allowBrowserInvocation>false</allowBrowserInvocation>
 </application>

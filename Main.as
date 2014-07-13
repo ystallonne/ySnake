@@ -95,11 +95,27 @@
 			}
 			
 			/* CONTROL */
-			if (options.getControl() == "Single"){
+			if (options.getControl() == "Gesture"){
+				this.ySnakeInterface.btnControl.btnSingleTouch.visible = false;
+				this.ySnakeInterface.btnControl.btnGesture.visible = true;
+				this.ySnakeInterface.btnControl.btnControl.visible = false;
+			} else if (options.getControl() == "Control"){
+				this.ySnakeInterface.btnControl.btnSingleTouch.visible = false;
+				this.ySnakeInterface.btnControl.btnGesture.visible = false;
+				this.ySnakeInterface.btnControl.btnControl.visible = true;
+			} else {
+				this.ySnakeInterface.btnControl.btnSingleTouch.visible = false;
+				this.ySnakeInterface.btnControl.btnGesture.visible = true;
+				this.ySnakeInterface.btnControl.btnControl.visible = false;
+				noData = true;
+			}
+			
+			/* CONTROL */
+			/*if (options.getControl() == "Single"){
 				this.ySnakeInterface.btnControl.btnSingleTouch.visible = true;
 				this.ySnakeInterface.btnControl.btnGesture.visible = false;
 				this.ySnakeInterface.btnControl.btnControl.visible = false;
-			} else if (options.getControl() == "Gesture"){
+			} else\ if (options.getControl() == "Gesture"){
 				this.ySnakeInterface.btnControl.btnSingleTouch.visible = false;
 				this.ySnakeInterface.btnControl.btnGesture.visible = true;
 				this.ySnakeInterface.btnControl.btnControl.visible = false;
@@ -112,7 +128,7 @@
 				this.ySnakeInterface.btnControl.btnGesture.visible = false;
 				this.ySnakeInterface.btnControl.btnControl.visible = false;
 				noData = true;
-			}
+			}*/
 			
 			/* LEVEL */
 			if (options.getLevels() == "Active"){
@@ -129,7 +145,7 @@
 			
 			if (noData){
 				options.setSound("Active");
-				options.setControl("Single");
+				options.setControl("Gesture");
 				options.setLevels("Active");
 				options.insertToDatabase();
 				noData = false;
@@ -156,7 +172,18 @@
 
 		public function ySnakeOptionsControl(Event:MouseEvent):void {
 			trace("Control");
-			if (options.getControl() == "Single"){
+			if (options.getControl() == "Gesture"){
+				this.ySnakeInterface.btnControl.btnSingleTouch.visible = false;
+				this.ySnakeInterface.btnControl.btnGesture.visible = false;
+				this.ySnakeInterface.btnControl.btnControl.visible = true;
+				options.setControl("Control");
+			} else {
+				this.ySnakeInterface.btnControl.btnSingleTouch.visible = false;
+				this.ySnakeInterface.btnControl.btnGesture.visible = true;
+				this.ySnakeInterface.btnControl.btnControl.visible = false;
+				options.setControl("Gesture");
+			}			
+			/*if (options.getControl() == "Single"){
 				this.ySnakeInterface.btnControl.btnSingleTouch.visible = false;
 				this.ySnakeInterface.btnControl.btnGesture.visible = true;
 				this.ySnakeInterface.btnControl.btnControl.visible = false;
@@ -171,7 +198,7 @@
 				this.ySnakeInterface.btnControl.btnGesture.visible = false;
 				this.ySnakeInterface.btnControl.btnControl.visible = false;
 				options.setControl("Single");
-			}
+			}*/
 			trace(options.getControl());
 			options.updateToDatabase();
 		}
